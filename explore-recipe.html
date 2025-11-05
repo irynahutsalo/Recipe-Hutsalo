@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Page | Mandatory</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="bck_cicle"></div> -->
+        <!--navigation-->
+        <nav class="navigation fixed">
+            <div class="menu-container">
+                <ul>
+                    <li>
+                        <a class="clicked" href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Recipes</a>
+                    </li>
+                    <li><a href="">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--header area-->
+    <header class="hero-explore">
+        <div class="hero-explore-container">
+            <div class="hero-explore-text-top">
+                <h1>Explore Recipes</h1>
+            </div>
+            <div class="hero-explore-text-bottom">
+                <h2>Find the perfect recipe by category, time, or taste</h2>
+            </div>
+            <div class="search-box-explore">
+                <div class="search-input-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="search-icon" aria-label="Search icon">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="search" name="recipe-search" id="recipe-search" class="search-input-explore"
+                        placeholder="Search...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- filter bar-->
+    <div class="filter-bar">
+        <div class="filter-item">
+            <select class="filter-dropdown">
+                <option value="" disabled selected>Time</option>
+                <option value="15min">15 min</option>
+                <option value="30min">30 min</option>
+                <option value="60min">60 min+</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <select class="filter-dropdown">
+                <option value="" disabled selected>Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <select class="filter-dropdown">
+                <option value="" disabled selected>Calories</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <div class="filter-item">
+            <select class="filter-dropdown">
+                <option value="" disabled selected>Apipil</option>
+                <option value="opt1">Option 1</option>
+                <option value="opt2">Option 2</option>
+            </select>
+        </div>
+    </div>
+
+    <!--recipe block -->
+    <section class="recipe-grid">
+        <div class="recipe-grid-container">
+            <div class="recipe-card">
+                <div class="recipe-card-image-wrapper">
+                    <img src="https://picsum.photos/600/400?random=1" alt="Spicy Beef Bowl" class="recipe-card-image">
+                </div>
+                <div class="recipe-card-content">
+                    <h5 data-category="beef">SPICY BEEF BOWL</h5>
+                    <div class="recipe-card-details">
+                        <span class="recipe-card-time">25 MIN</span>
+                        <span class="recipe-card-calories">450CAL</span>
+                    </div>
+                    <a href="#" class="view-recipe-button">VIEW RECIPE</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-card-image-wrapper">
+                    <img src="https://picsum.photos/600/400?random=2" alt="Vegetarian Pasta" class="recipe-card-image">
+                </div>
+                <div class="recipe-card-content">
+                    <h5 data-category="vegetarian">VEGETARIAN PASTA</h5>
+                    <div class="recipe-card-details">
+                        <span class="recipe-card-time">15 MIN</span>
+                        <span class="recipe-card-calories">350CAL</span>
+                    </div>
+                    <a href="#" class="view-recipe-button">VIEW RECIPE</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-card-image-wrapper">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Chicken Curry" class="recipe-card-image">
+                </div>
+                <div class="recipe-card-content">
+                    <h5 data-category="chicken">CHICKEN CURRY</h5>
+                    <div class="recipe-card-details">
+                        <span class="recipe-card-time">30 MIN</span>
+                        <span class="recipe-card-calories">290CAL</span>
+                    </div>
+                    <a href="#" class="view-recipe-button">VIEW RECIPE</a>
+                </div>
+            </div>
+
+            <div class="recipe-card">
+                <div class="recipe-card-image-wrapper">
+                    <img src="https://picsum.photos/600/400?random=4" alt="Spicy Beef Bowl (Dessert)"
+                        class="recipe-card-image">
+                </div>
+                <div class="recipe-card-content">
+                    <h5 data-category="dessert">SPICY BEEF BOWL</h5>
+                    <div class="recipe-card-details">
+                        <span class="recipe-card-time">25 MIN</span>
+                        <span class="recipe-card-calories">450CAL</span>
+                    </div>
+                    <a href="#" class="view-recipe-button">VIEW RECIPE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="load-more-explore-button-container">
+        <div class="load-more-explore-button">
+            <button>
+                <a href="">Loard more</a>
+            </button>
+        </div>
+    </section>
+
+<section class="content-container-explore">
+    <div class="content-area-explore">
+        <a href="">How to Cook Pasta Al Dente</a>
+        <p>Get your pasta perfect every time! Learn the secret to cooking pasta al dente for that perfect bite. Іtop serving soggy, disappointing noodles and unlock the true flavor of Italian cuisine...</p>
+    </div>
+    <div class="content-area-explore">
+        <a href="">5 Spices That Make Your Soup Taste Better</a>
+        <p>Upgrade your soups with five must-have spices that take flavor to the next level.....</p>
+    </div>
+    <div class="content-area-explore">
+        <a href="">Healthy Swaps for Everyday Meals</a>
+        <p>Discover easy substitutions to make your favorite meals healthier without sacrificing taste......</p>
+    </div>
+    <div class="content-area-explore">
+        <a href="">10-Minute Meal Prep Hacks for Busy Weeknights</a>
+        <p>Uncover genius shortcuts and preparation tricks that slash your cooking time in half. Stop stressing over dinner and start enjoying delicious, home-cooked meals even on your busiest days...</p>
+    </div>
+     <div class="content-area-explore">
+        <a href="">The Ultimate Guide to Choosing and Storing Fresh Herbs</a>
+        <p>Elevate any dish with vibrant flavor! Learn which herbs pair best with meat, fish, and vegetables, plus expert tips on how to keep them fresh longer for maximum impact..</p>
+    </div>
+</section>
+<section class="comment-block-container">
+<div class="comment-block-wrapper">
+    <div class="comment-avatar">
+        <img src="img/photo.png" alt="Фото користувача">
+    </div>
+
+    <div class="comment-text-content">
+        <p class="comment-text"> 
+           "I’m honestly obsessed with this recipe site! Everything looks so inspiring and the step-by-step instructions make cooking fun and easy. I’ve discovered so many dishes I never thought I could make myself!"
+        </p>    
+        </div>
+</section>
+ <!--footer area-->
+        <footer class="footer">
+            <div class="footer_nav">
+                <div class="social_media_item">
+
+                    <ul class="social_media_link">
+                        <li>
+                            <svg class="content_area_block_icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-miterlimit="10"
+                                    stroke-width="1.5"
+                                    d="M22.54 6.42a2.77 2.77 0 0 0-1.945-1.957C18.88 4 12 4 12 4s-6.88 0-8.595.463A2.77 2.77 0 0 0 1.46 6.42C1 8.148 1 11.75 1 11.75s0 3.602.46 5.33a2.77 2.77 0 0 0 1.945 1.958C5.121 19.5 12 19.5 12 19.5s6.88 0 8.595-.462a2.77 2.77 0 0 0 1.945-1.958c.46-1.726.46-5.33.46-5.33s0-3.602-.46-5.33ZM9.75 15.021V8.48l5.75 3.271z" />
+                            </svg>
+
+                            <a href="">Youtube</a>
+                        </li>
+                        <li>
+                            <svg class="content_area_block_icon" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M18.437 20.937H5.563a2.5 2.5 0 0 1-2.5-2.5V5.563a2.5 2.5 0 0 1 2.5-2.5h12.874a2.5 2.5 0 0 1 2.5 2.5v12.874a2.5 2.5 0 0 1-2.5 2.5M5.563 4.063a1.5 1.5 0 0 0-1.5 1.5v12.874a1.5 1.5 0 0 0 1.5 1.5h12.874a1.5 1.5 0 0 0 1.5-1.5V5.563a1.5 1.5 0 0 0-1.5-1.5Z" />
+                                <path fill="currentColor"
+                                    d="M12 16.594A4.595 4.595 0 1 1 16.6 12a4.6 4.6 0 0 1-4.6 4.594M12 8.4a3.595 3.595 0 1 0 3.6 3.6A3.6 3.6 0 0 0 12 8.4" />
+                                <circle cx="17.2" cy="6.83" r="1.075" fill="currentColor" />
+                            </svg>
+                            <a href="">Instagram</a>
+                        </li>
+                        <li>
+                            <svg class="content_area_block_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M19.02 4.975A9.93 9.93 0 0 0 2.07 12A9.935 9.935 0 0 0 12 21.935a10 10 0 0 0 3.8-.75a10.2 10.2 0 0 0 3.22-2.16a9.934 9.934 0 0 0 0-14.05m-.7 13.34a8.92 8.92 0 0 1-5.32 2.57v-6.56h1.88a1 1 0 0 0 0-2H13v-2.74a1 1 0 0 1 1-1h1.2a1 1 0 0 0 0-2h-1.7a2.5 2.5 0 0 0-2.5 2.5v3.24H9.13a1 1 0 1 0 0 2H11v6.56a8.919 8.919 0 1 1 9.26-5.47a9.1 9.1 0 0 1-1.94 2.9" />
+                            </svg>
+                            <a href="">Facebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="site_menu_item">
+                    <ul class="site_menu_link">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Recipe</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_nav_right">
+                    <ul class="footer_nav_right">
+                        <li>
+                            <a href="">https://open.spotify.com/track/4gRA0i5sxx3jAhHaVjPnUN?si=aaba07b09223416c</a>
+                        </li>
+                        <li>
+                            <a href="">https://open.spotify.com/album/6Xuu2z00jxRPZei4IJ9neK</a>
+                        </li>
+                    </ul>
+                    <div class="footer_nav_right_bottom">
+                            <svg class="footer_nav_right_bottom_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 8c-1.205.86-2 2.33-2 4s.795 3.14 2 4m6-8c1.206.86 2 2.33 2 4s-.794 3.14-2 4"/><circle cx="12" cy="12" r="10"/></g></svg>
+                            
+                            <p class="footer_nav_right_bottom_text">Etsy is powered by 100% renewable electricity.</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
