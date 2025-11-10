@@ -409,7 +409,7 @@ h5[data-category="pasta"] {
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    margin: 200px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 .image_section_content_block {
@@ -709,7 +709,7 @@ grid-row: 1;
     flex-wrap: wrap;
     height: 240px;
     border-radius: 5px;
-    margin: 200px 0 0 0;
+    margin: 140px 0 0 0;
 }
 
 .filter-category-checkbox h3 {
@@ -933,7 +933,7 @@ grid-row: 1;
 }
 
 .recipe-grid {
-    width: var(--width-full);
+    width: var(--width-12col);
     display: flex;
     justify-content: center;
     /* margin-top: 40px; */
@@ -1125,8 +1125,6 @@ grid-row: 1;
     --width-12col: 100%;
   }
 
-
-
  .todays_recipes,
 .categories,
 .content-area {
@@ -1190,12 +1188,13 @@ grid-row: 1;
     
     .todays_recipes {
     width: var(--width-12col);
+    grid-template-rows: 50px auto;
 }
     
     .todays_recipes_headline {
         font-size: 20px;
     height: 25px;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     }
 
     .todays_recipes_content {
@@ -1234,6 +1233,7 @@ grid-row: 1;
 
     .categories_content {
         width: var(--width-12col); 
+     
     }
 
     .categories_content_block {
@@ -1241,7 +1241,8 @@ grid-row: 1;
         grid-template-columns: repeat(4, 1fr); 
         gap: 15px; 
         flex-wrap: wrap;
-        justify-content: center; 
+        justify-content: center;   
+        margin: 0 auto;
     }
 
     .categories_content_block_item h5 {
@@ -1284,12 +1285,13 @@ grid-row: 1;
 
  .content-area {
     width: var(--width-12col);
+    grid-template-rows: 50px auto;
  }
 
     .content_area_headline {
       font-size: 20px;
     height: 25px;
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
     }
 
     .content_area_content {
@@ -1344,6 +1346,8 @@ grid-row: 1;
 
      .footer_nav {
         width: var(--width-12col);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
     }
 
     .social_media_item li a,
@@ -1353,23 +1357,27 @@ grid-row: 1;
 }
 
 .social_media_item {
-grid-column: 1 / span 3;
+grid-column: 1;
+margin-right: 25px;
 }
 
 .site_menu_item {
-    grid-column: 4 / span 2;
-        border-right: 1px solid var(--backgrount-color-light);
-}
+    grid-column: 2;
+    border-right: 1px solid var(--backgrount-color-light);
+    }
 
 .footer_nav_right {
-    grid-column: 6 / 13;
+    grid-column: 3;
   }
 
-  .footer_nav_right_bottom_text,
-  .footer_nav_right li a {
+  .footer_nav_right_bottom_text{
     font-size: 8px;
     font-weight: 400;
 }
+
+ .footer_nav_right li a {
+    display: none;
+ }
 
 .footer_nav_right_bottom_icon {
     width: 16px;
@@ -1391,6 +1399,7 @@ grid-column: 1 / span 3;
 
 .search-box-searchpage {
     margin: 100px 0 0 0;
+    padding: 0 0 0 10px;
 }
 
 .search-input {
